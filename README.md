@@ -1,73 +1,115 @@
-# Welcome to your Lovable project
+# 🎮 Retro Pixel Platformer
 
-## Project info
+Welcome to **Retro Pixel Platformer** – a nostalgic journey back to the golden age of 8-bit gaming! 🚀 Built using **Next.js**, this side-scrolling platformer features beautiful pixel art, fun collectibles, and smooth gameplay mechanics designed to offer a true retro experience for players.
 
-**URL**: https://lovable.dev/projects/04cbdc33-c3d7-4845-9111-cfda5f4163be
+## 🕹️ Features
 
-## How can I edit this code?
+- 🎨 Retro 8-bit pixel art aesthetic
+- 🌍 Side-scrolling platform environment
+- 💎 Collectible items (coins, gems, power-ups)
+- 🧠 Simple but effective game logic
+- 🎵 Chiptune sound effects
+- ⚡ Built using modern web technologies: **Next.js**, **Canvas/WebGL**, and **JavaScript/TypeScript**
 
-There are several ways of editing your application.
+## 📦 Tech Stack
 
-**Use Lovable**
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Rendering**: HTML5 Canvas / WebGL
+- **Art Style**: Pixel Art (16x16, 32x32 sprites)
+- **Audio**: Chiptune sound effects
+- **Styling**: CSS Modules / Tailwind CSS
+- **Deployment**: Vercel / Netlify
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/04cbdc33-c3d7-4845-9111-cfda5f4163be) and start prompting.
+## 🏗️ Project Structure
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+├── public/
+│   ├── assets/
+│   │   ├── sprites/
+│   │   ├── backgrounds/
+│   │   └── audio/
+├── src/
+│   ├── components/
+│   │   ├── GameCanvas.tsx
+│   │   └── Collectible.tsx
+│   ├── styles/
+│   ├── pages/
+│   │   └── index.tsx
+│   ├── utils/
+│   │   └── gameEngine.ts
+├── README.md
+└── next.config.js
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+## 🚀 Getting Started
+1. Clone the repo
+```
+git clone https://github.com/yourusername/retro-pixel-platformer.git
+cd retro-pixel-platformer
 ```
 
-**Edit a file directly in GitHub**
+3. Install dependencies
+```
+npm install
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+4. Run development server
+```
+npm run dev
+Visit http://localhost:3000 to play the game locally.
+```
 
-**Use GitHub Codespaces**
+## 🎨 Pixel Art & Assets
+All sprites are custom-designed or sourced from free-to-use pixel art libraries such as:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Kenney.nl
 
-## What technologies are used for this project?
+OpenGameArt
 
-This project is built with:
+Itch.io Free Assets
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+You can add your own sprites in the /public/assets/sprites directory and modify gameEngine.ts for new logic.
 
-## How can I deploy this project?
+## 🧩 Collectibles System
+Collectibles include:
 
-Simply open [Lovable](https://lovable.dev/projects/04cbdc33-c3d7-4845-9111-cfda5f4163be) and click on Share -> Publish.
+💰 Coins (10 points)
 
-## Can I connect a custom domain to my Lovable project?
+💎 Gems (50 points)
 
-Yes it is!
+🧃 Power-Ups (temporary speed/jump boosts)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Each collectible has its own animation and collision logic, rendered inside the GameCanvas component.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📦 Build & Deployment
+To build the app for production:
+
+```
+npm run build
+```
+To start the production server:
+```
+npm start
+```
+You can deploy this on Vercel with one click.
+
+📸 Screenshots
+![Screenshot (2687)](https://github.com/user-attachments/assets/f02a5232-cf63-4d8c-83ca-7f89682920d1)
+
+![Screenshot (2688)](https://github.com/user-attachments/assets/cfe4ace9-a951-4493-8131-c0a61383eba8)
+
+## 🤝 Contributing
+Contributions are welcome! 
+
+Feel free to fork the repo and submit pull requests. You can contribute by:
+
+Improving performance
+
+Adding new levels
+
+Creating new collectibles or enemies
+
+Enhancing mobile support
+
+## 📄 License
+This project is licensed under the MIT License.
