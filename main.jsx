@@ -7,7 +7,7 @@ ReactDOM.render(
   <BedrockPassportProvider
     baseUrl="https://api.bedrockpassport.com"
     authCallbackUrl="http://localhost:3000/auth/callback"
-    tenantId="your-project-id-from-dashboard"
+    tenantId="orange-hfatzsnpch"
   >
     <App />
   </BedrockPassportProvider>,
